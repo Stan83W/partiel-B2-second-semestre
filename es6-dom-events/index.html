@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript : ES6, DOM & Events</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container mt-5 px-5 mb-5">
+      <h1 class="pt-3">JavaScript : ES6, DOM & Events</h1>
+      <h2 class="pt-3">Question 1</h2>
+      <p>
+        Quelle méthode JavaScript faut-il utiliser pour itérer sur
+        le tableau donné en exemple ci-dessous ? Dans la console, affichez individuellement les quatres éléments de ce tableau comme dans l’exemple fourni.
+      </p>
+      <pre class="prettyprint lang-js">
+        <code>
+          const beatles = ["paul", "john", "ringo", "george"];
+          // RESULTAT :
+          // paul
+          // john
+          // ringo
+          // george
+        </code>
+      </pre>
+
+      <h2 class="pt-3">Question 2</h2>
+      <p>
+        Avec JavaScript, comment séléctionner un élément du DOM d’après son <strong>id</strong> ? Séléctionnez l’élément possédant l’identifiant <strong>drummer</strong> parmi les trois éléments ci-dessous.
+      </p>
+      <pre class="prettyprint pt-3">
+        &lt;p class="beatles" id="guitarist"&gt;John&lt;/p&gt;
+        &lt;p class="beatles" id="drummer"&gt;Ringo&lt;/p&gt;
+        &lt;p class="beatles" id="singer"&gt;Paul&lt;/p&gt;
+      </pre>
+      <p class="beatles" id="guitarist">John</p>
+      <p class="beatles" id="drummer">Ringo</p>
+      <p class="beatles" id="singer">Paul</p>
+
+      <h2 class="pt-3">Question 3</h2>
+      <p>
+        Comment séléctionner plusieurs éléments lorsqu’on
+        ne dispose pas d’<strong>id</strong> ? Séléctionnez uniquement les
+        paragraphes possédant la classe <strong>red</strong>.
+      </p>
+      <pre class="prettyprint pt-3">
+        &lt;p class="red"&gt;A red paragraph&lt;/p&gt;
+        &lt;p class="green"&gt;A green paragraph&lt;/p&gt;
+        &lt;p class="red"&gt;Another red paragraph&lt;/p&gt;
+      </pre>
+      <p class="red">A red paragraph</p>
+      <p class="green">A green paragraph</p>
+      <p class="red">Another red paragraph</p>
+
+      <h2 class="pt-3">Question 4</h2>
+      <p>
+        Comment peut-on écouter un évènement de type <strong>mouseover</strong> sur le bouton ci-dessous ? Bonus : ajoutez un effet de hover personnalisé.
+      </p>
+      <pre class="prettyprint lang-js">
+        <code>
+          const element = document.querySelector(".listening");
+        </code>
+      </pre>
+      <div class="pt-3">
+        <a href="#" class="button listening">Use JavaScript to listen to mouseover !</a>
+      </div>
+
+      <h2 class="pt-5">Question 5</h2>
+      <p>
+        Avec JavaScript, comment insérer du contenu HTML
+        à l’intérieur de cet élément du DOM ? Séléctionnez la liste ci-dessous et ajoutez lui un <strong>list items</strong> contenant <strong>Obi Wan</strong>, placez le en dernière position.
+      </p>
+      <pre class="prettyprint pt-3">
+        &lt;ul id="jedi"&gt;
+          &lt;li&gt;Anakin&lt;/li&gt;
+          &lt;li&gt;Luke&lt;/li&gt;
+        &lt;/ul&gt;
+      </pre>
+      <ul id="jedi">
+        <li>Anakin</li>
+        <li>Luke</li>
+      </ul>
+
+      <h2 class="pt-3">Question 6</h2>
+      <p>
+        Comment ajouter ou retirer une classe CSS à un élément du DOM ? Retirez la classe <strong>blue</strong> de cet élément et remplacez la par <strong>red</strong>.
+      </p>
+      <pre class="prettyprint pt-3">
+        &lt;p class="blue"&gt;Turn this blue paragraph into red&lt;/p&gt;
+      </pre>
+      <p class="blue">Turn this blue paragraph into red</p>
+
+      <h2 class="pt-3">Question 7</h2>
+      <p>
+        Définissez une fonction <strong>multiply</strong>, prenant deux paramètres : <strong>a</strong> et <strong>b</strong> ; et qui renvoie le résultat de  <strong>a * b</strong>.
+      </p>
+
+      <h2 class="pt-3">Question 8</h2>
+      <p>
+        En utilisant la syntaxe d’ES6, interpolez le contenu des deux premières variables à l’intérieur de la variable <strong>fullName</strong> pour afficher la string <strong>"Ringo Starr is a drummer"</strong>.
+      </p>
+      <pre class="prettyprint lang-js">
+        <code>
+          const firstName = "Ringo";
+          const lastName = "Starr";
+          const fullName = ...
+          console.log(fullName);
+          // RESULTAT :
+          // "Ringo Starr is a drummer";
+        </code>
+      </pre>
+
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&amp;skin=desert"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+/* Your style here */
+body {
+  background-image: url(images/stars.jpg);
+}
+.logo {
+  height: 100px;
+  margin: 50px auto;
+}
+
+#playground {
+  margin: auto;
+}
+
+#playground td {
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+}
+
+td {
+  background-size: 80px;
+  background-position: 0 20px;
+  background-repeat: no-repeat;
+}
+
+tr#player1_race td.active {
+  background-image: url(images/player_1.png);
+  background-position: center;
+  box-shadow: 0 0 2rem green;
+}
+
+tr#player2_race td.active {
+  background-image: url(images/player_2.png);
+  background-position: center;
+  box-shadow: 0 0 2rem red;
+}
+
+#player1_race td:last-child {
+  background-image: url(images/death-star.png);
+  background-position: center;
+}
+
+#player2_race td:last-child {
+  background-image: url(images/alderaan.png);
+  background-position: center;
+}
+
+td:last-child.active {
+  background-position: 0 20px, 0 0;
+}
+
+tr#player1_race td:last-child.active {
+  background-image: url(images/player_1.png), url('images/explosion.png');
+  background-position: center;
+}
+
+tr#player2_race td:last-child.active {
+  background-image: url(images/player_2.png), url('images/explosion.png');
+  background-position: center;
+}

@@ -1,0 +1,40 @@
+h1, h2 {
+  color: #d9d9d9 !important;
+}
+strong {
+  font-weight: normal !important;
+  color: #ff3796;
+}
+.beatles {
+  font-weight: bold;
+  color: #87c0cd;
+}
+.red {
+  color: #cf3030;
+}
+.green {
+  color: #6effbf;
+}
+.blue{
+  color: #0075f6;
+}
+.button {
+  border: 1px solid #5d50c6;
+  color: #5d50c6;
+  padding: 10px 15px;
+}
+.button:hover {
+  color: #5d50c6;
+  text-decoration: none;
+}
+.highlight {
+  transition: all 0.7s;
+  background-color: black;
+  border: 1px solid black;
+}
+#jedi {
+  font-weight: bold;
+  color: #87c0cd;
+  list-style-type: none;
+  padding-left: 0;
+}
