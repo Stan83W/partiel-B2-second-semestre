@@ -10,7 +10,7 @@ function victory() {
     alert("Empire Wins");
     location.reload();
   }
-}
+};
 
 document.addEventListener("keyup", (e) => {
   if (e.key == "a") {
